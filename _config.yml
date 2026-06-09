@@ -1,0 +1,22 @@
+title: "Michael Augustine"
+tagline: "AI Ops Engineer & AI Automation Consultant"
+description: "AI Ops engineer and consultant building HIPAA-aware automation, RAG systems, and secure cloud tooling for regulated and growing teams."
+url: "https://augforce.github.io"
+baseurl: ""
+
+author: "Michael Augustine"
+
+# --- Contact (fill these in) ---
+email: ""              # e.g. you@example.com  -> renders an "Email me" button
+github: "augforce"
+linkedin: ""           # full URL, e.g. https://www.linkedin.com/in/...
+upwork: ""             # full URL to your Upwork profile
+
+# --- Build ---
+exclude:
+  - docs/
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor/
+  - .gitignore

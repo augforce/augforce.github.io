@@ -1,0 +1,37 @@
+# Project cards — single source of truth for the Work section.
+# Add a project = add an entry here. MLB stays last (least B2B-relevant).
+
+- title: "Workspace Login Audit"
+  blurb: "Generates audit-ready PDF reports of Google Workspace login activity straight from BigQuery logs — two-layer auth, idle-timeout sessions, and cost-capped queries."
+  tags: [FastAPI, Cloud Run, BigQuery]
+  url: "https://github.com/augforce/audit-webapp"
+
+- title: "Workspace Security Auditor"
+  blurb: "A self-hosted security-posture auditor for Google Workspace — enterprise-tier insight without paying for the enterprise tier."
+  tags: [Python, Admin SDK, Security]
+  url: "https://github.com/augforce/google-workspace-security-audit"
+
+- title: "Scout — IT Support Assistant"
+  blurb: "A retrieval-augmented assistant that answers IT questions over a company's Google Drive knowledge base, with cited sources."
+  tags: [RAG, FastAPI, HTMX, Claude]
+  url: "https://github.com/augforce/scout-it-assistant"
+
+- title: "RAG Readiness Grader"
+  blurb: "Scores documents for retrieval quality before they enter an index — catching the junk that quietly degrades RAG answers."
+  tags: [Python, RAG, QA]
+  url: "https://github.com/augforce/document-rag-readiness-grader"
+
+- title: "Model-Routing Chat"
+  blurb: "A LibreChat deployment configured to route staff to the right model for each task, taking the guesswork out of model selection."
+  tags: [LibreChat, Multi-model]
+  url: "https://github.com/augforce/custom-librechat-demo"
+
+- title: "Path to Purpose — Case Study"
+  blurb: "An engineering case study: a Hellenistic-astrology lead magnet built for a client on Cloudflare Pages with the Claude API."
+  tags: [Cloudflare, Claude API, GeoNames]
+  url: "https://github.com/augforce/path-to-purpose-case-study"
+
+- title: "MLB Pitch Predictor"
+  blurb: "An ML model predicting a pitcher's next pitch type, trained on 4,000+ pitches with real-world testing and drift analysis."
+  tags: [Vertex AI, ML, Python]
+  url: "https://github.com/augforce/mlb-pitch-predictor"

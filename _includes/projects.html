@@ -1,0 +1,22 @@
+<section class="section" id="work">
+  <div class="container">
+    <p class="section__label" data-reveal>// 01 — Selected Work</p>
+    <h2 class="section__title" data-reveal>Things I've shipped</h2>
+
+    <div class="cards">
+      {% for p in site.data.projects %}
+      <article class="card" data-reveal>
+        <div class="card__top">
+          <span class="card__num">{{ forloop.index | prepend: '0' | slice: -2, 2 }}</span>
+          <ul class="card__tags">{% for t in p.tags %}<li>{{ t }}</li>{% endfor %}</ul>
+        </div>
+        <h3 class="card__title">{{ p.title }}</h3>
+        <p class="card__blurb">{{ p.blurb }}</p>
+        <a class="card__link" href="{{ p.url }}" target="_blank" rel="noopener">
+          View on GitHub <span aria-hidden="true">→</span>
+        </a>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>

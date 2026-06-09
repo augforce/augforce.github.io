@@ -1,0 +1,16 @@
+# Capability clusters for the Skills section.
+
+- group: "Cloud & Infrastructure"
+  items: [GCP, Azure, Cloud Run, Cloudflare, BigQuery, Linux, "13+ yrs infra"]
+
+- group: "AI & Automation"
+  items: ["Claude API", OpenAI, RAG, "AI Agents", n8n, "Vertex AI"]
+
+- group: "Security & Compliance"
+  items: [HIPAA, "SOC 2", "Workspace Security", "Audit Logging"]
+
+- group: "Languages & Frameworks"
+  items: [Python, FastAPI, HTMX, SQL]
+
+- group: "Certifications"
+  items: ["Azure Certified", "GCP Certified"]
