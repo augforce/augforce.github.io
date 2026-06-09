@@ -1,16 +1,19 @@
 /* ============================================================
    Michael Augustine — portfolio
-   Aesthetic: clean, airy, blue-and-white (light theme).
-   White ground, dark-navy text, single confident blue accent.
+   Light theme: clean, airy, blue-and-white.
+   Dark theme: dark navy + brighter blue (via [data-theme="dark"]).
+   Palette is driven entirely by the CSS variables below.
    ============================================================ */
 
 :root {
   --bg:        #ffffff;
+  --bg-rgb:    255, 255, 255;  /* for translucent nav backgrounds */
   --bg-tint:   #f4f8fd;        /* faint cool section background */
   --surface:   #ffffff;
   --surface-2: #f8fafd;
   --border:    #e4eaf1;
   --border-2:  #d2dce8;
+  --grid-line: #eef3f9;        /* faint blueprint grid lines */
 
   --text:      #0f1b2d;        /* dark navy */
   --text-dim:  #51617a;
@@ -34,6 +37,32 @@
   --shadow-lg: 0 14px 34px rgba(15, 27, 45, 0.12);
 }
 
+/* ---------- dark theme ---------- */
+html[data-theme="dark"] {
+  --bg:        #0b1220;
+  --bg-rgb:    11, 18, 32;
+  --bg-tint:   #0e1729;
+  --surface:   #111b30;
+  --surface-2: #16223a;
+  --border:    #243149;
+  --border-2:  #324465;
+  --grid-line: #182740;
+
+  --text:      #e9eef7;
+  --text-dim:  #9fb0c9;
+  --text-faint:#6b7c98;
+
+  --accent:        #5b9bff;
+  --accent-strong: #82b2ff;
+  --accent-soft:   rgba(91, 155, 255, 0.12);
+  --accent-line:   rgba(91, 155, 255, 0.30);
+  --accent-glow:   rgba(91, 155, 255, 0.16);
+  --ok:        #34d399;
+
+  --shadow:    0 1px 2px rgba(0, 0, 0, 0.45), 0 4px 14px rgba(0, 0, 0, 0.35);
+  --shadow-lg: 0 18px 42px rgba(0, 0, 0, 0.55);
+}
+
 /* ---------- reset / base ---------- */
 *, *::before, *::after { box-sizing: border-box; }
 html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
@@ -48,9 +77,10 @@ body {
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   overflow-x: hidden;
+  transition: background-color .3s ease, color .3s ease;
 }
 
-/* atmosphere: faint blueprint grid + soft blue glow up top */
+/* atmosphere: faint blueprint grid + soft accent glow up top */
 body::before {
   content: "";
   position: fixed;
@@ -59,8 +89,8 @@ body::before {
   pointer-events: none;
   background:
     radial-gradient(1100px 620px at 72% -12%, var(--accent-glow), transparent 60%),
-    linear-gradient(#eef3f9 1px, transparent 1px) 0 0 / 100% 64px,
-    linear-gradient(90deg, #eef3f9 1px, transparent 1px) 0 0 / 64px 100%;
+    linear-gradient(var(--grid-line) 1px, transparent 1px) 0 0 / 100% 64px,
+    linear-gradient(90deg, var(--grid-line) 1px, transparent 1px) 0 0 / 64px 100%;
   -webkit-mask-image: radial-gradient(125% 100% at 50% 0%, #000 28%, transparent 96%);
           mask-image: radial-gradient(125% 100% at 50% 0%, #000 28%, transparent 96%);
   opacity: 0.75;
@@ -110,13 +140,13 @@ h1, h2, h3 { margin: 0; font-family: var(--display); font-weight: 700; letter-sp
   background: var(--accent);
   color: #fff;
   font-weight: 500;
-  box-shadow: 0 4px 14px rgba(37, 99, 235, 0.25);
+  box-shadow: 0 4px 14px var(--accent-soft);
 }
-.btn--primary:hover { transform: translateY(-2px); background: var(--accent-strong); box-shadow: 0 6px 18px rgba(37, 99, 235, 0.32); }
+.btn--primary:hover { transform: translateY(-2px); background: var(--accent-strong); }
 .btn--ghost {
   border-color: var(--border-2);
   color: var(--text);
-  background: #fff;
+  background: var(--surface);
 }
 .btn--ghost:hover { border-color: var(--accent); color: var(--accent); transform: translateY(-2px); }
 
@@ -129,7 +159,7 @@ h1, h2, h3 { margin: 0; font-family: var(--display); font-weight: 700; letter-sp
   border-bottom: 1px solid transparent;
 }
 .nav.is-scrolled {
-  background: rgba(255, 255, 255, 0.82);
+  background: rgba(var(--bg-rgb), 0.82);
   backdrop-filter: blur(10px);
   border-bottom-color: var(--border);
 }
@@ -139,6 +169,7 @@ h1, h2, h3 { margin: 0; font-family: var(--display); font-weight: 700; letter-sp
   justify-content: space-between;
   height: 64px;
 }
+.nav__right { display: flex; align-items: center; gap: 1.2rem; }
 .nav__brand { font-size: 0.92rem; letter-spacing: 0.02em; color: var(--text); }
 .nav__brand-dot { color: var(--accent); }
 .nav__links { display: flex; align-items: center; gap: 1.6rem; }
@@ -161,6 +192,25 @@ h1, h2, h3 { margin: 0; font-family: var(--display); font-weight: 700; letter-sp
   font-size: 0.78rem; color: var(--text-faint);
   padding-left: 1.2rem; border-left: 1px solid var(--border);
 }
+
+/* theme toggle button */
+.nav__theme {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 38px; height: 38px;
+  border: 1px solid var(--border-2);
+  border-radius: 9px;
+  background: var(--surface);
+  color: var(--text-dim);
+  cursor: pointer;
+  transition: color .18s ease, border-color .18s ease, background-color .18s ease;
+}
+.nav__theme:hover { color: var(--accent); border-color: var(--accent); }
+.nav__theme svg { width: 18px; height: 18px; display: block; }
+.nav__theme .icon-sun { display: none; }
+html[data-theme="dark"] .nav__theme .icon-moon { display: none; }
+html[data-theme="dark"] .nav__theme .icon-sun { display: block; }
+.no-js .nav__theme { display: none; }   /* no toggle without JS */
+
 .nav__toggle {
   display: none;
   flex-direction: column;
@@ -200,7 +250,7 @@ h1, h2, h3 { margin: 0; font-family: var(--display); font-weight: 700; letter-sp
 
 /* ---------- sections ---------- */
 .section { padding: clamp(3.5rem, 9vh, 6.5rem) 0; scroll-margin-top: 84px; }
-.section--skills { background: var(--bg-tint); border-block: 1px solid var(--border); }
+.section--skills { background: var(--bg-tint); border-block: 1px solid var(--border); transition: background-color .3s ease, border-color .3s ease; }
 .section__label {
   color: var(--accent);
   font-size: 0.8rem;
@@ -229,7 +279,7 @@ h1, h2, h3 { margin: 0; font-family: var(--display); font-weight: 700; letter-sp
   flex-direction: column;
   overflow: hidden;
   box-shadow: var(--shadow);
-  transition: transform .22s ease, border-color .22s ease, box-shadow .22s ease;
+  transition: transform .22s ease, border-color .22s ease, box-shadow .22s ease, background-color .3s ease;
 }
 .card::before {
   content: "";
@@ -279,8 +329,9 @@ h1, h2, h3 { margin: 0; font-family: var(--display); font-weight: 700; letter-sp
   border: 1px solid var(--border);
   border-radius: var(--radius);
   padding: 1.4rem 1.4rem 1.6rem;
-  background: #fff;
+  background: var(--surface);
   box-shadow: var(--shadow);
+  transition: background-color .3s ease, border-color .3s ease;
 }
 .skills__group-title {
   font-family: var(--display);
@@ -316,7 +367,7 @@ h1, h2, h3 { margin: 0; font-family: var(--display); font-weight: 700; letter-sp
 .contact__links a:hover { color: var(--accent); border-bottom-color: var(--accent); }
 
 /* ---------- footer ---------- */
-.footer { border-top: 1px solid var(--border); padding: 2rem 0; background: var(--bg-tint); }
+.footer { border-top: 1px solid var(--border); padding: 2rem 0; background: var(--bg-tint); transition: background-color .3s ease, border-color .3s ease; }
 .footer__inner {
   display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between;
   gap: 0.8rem;
@@ -344,7 +395,7 @@ h1, h2, h3 { margin: 0; font-family: var(--display); font-weight: 700; letter-sp
     align-items: flex-start;
     gap: 1.3rem;
     padding: 1.6rem var(--gutter) 2rem;
-    background: rgba(255, 255, 255, 0.97);
+    background: rgba(var(--bg-rgb), 0.97);
     backdrop-filter: blur(10px);
     border-bottom: 1px solid var(--border);
     box-shadow: var(--shadow);

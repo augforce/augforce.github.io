@@ -36,6 +36,24 @@
     });
   }
 
+  /* --- theme toggle --- */
+  var themeBtn = document.getElementById("themeToggle");
+  if (themeBtn) {
+    var syncPressed = function () {
+      themeBtn.setAttribute(
+        "aria-pressed",
+        document.documentElement.getAttribute("data-theme") === "dark" ? "true" : "false"
+      );
+    };
+    syncPressed();
+    themeBtn.addEventListener("click", function () {
+      var next = document.documentElement.getAttribute("data-theme") === "dark" ? "light" : "dark";
+      document.documentElement.setAttribute("data-theme", next);
+      try { localStorage.setItem("theme", next); } catch (e) {}
+      syncPressed();
+    });
+  }
+
   /* --- scroll reveal --- */
   var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   var revealables = document.querySelectorAll("[data-reveal]");
