@@ -9,8 +9,10 @@
     <div class="contact__actions" data-reveal>
       {% if site.email and site.email != "" %}
       <a class="btn btn--primary" href="mailto:{{ site.email }}">Email me</a>
+      <a class="contact__email" href="mailto:{{ site.email }}">{{ site.email }}</a>
       {% endif %}
       <div class="contact__links">
+        {% if site.resume and site.resume != "" %}<a href="{{ site.resume | relative_url }}" target="_blank" rel="noopener">Résumé (PDF)</a>{% endif %}
         {% if site.github and site.github != "" %}<a href="https://github.com/{{ site.github }}" target="_blank" rel="noopener">GitHub</a>{% endif %}
         {% if site.linkedin and site.linkedin != "" %}<a href="{{ site.linkedin }}" target="_blank" rel="noopener">LinkedIn</a>{% endif %}
         {% if site.upwork and site.upwork != "" %}<a href="{{ site.upwork }}" target="_blank" rel="noopener">Upwork</a>{% endif %}

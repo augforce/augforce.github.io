@@ -11,6 +11,7 @@ email: "maugustine78@gmail.com"
 github: "augforce"
 linkedin: "https://www.linkedin.com/in/michael-augustine-8926a2164/"
 upwork: ""             # full URL to your Upwork profile
+resume: "/assets/files/mAugustineResume.pdf"
 
 # --- Build ---
 exclude:

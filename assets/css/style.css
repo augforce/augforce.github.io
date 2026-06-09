@@ -427,7 +427,15 @@ html[data-theme="dark"] .nav__theme .icon-sun { display: block; }
 }
 .section--contact .section__label { display: inline-block; }
 .contact__lead { color: var(--text-dim); margin: 0 auto 2.2rem; max-width: 48ch; }
-.contact__actions { display: flex; flex-direction: column; align-items: center; gap: 1.6rem; }
+.contact__actions { display: flex; flex-direction: column; align-items: center; gap: 1.2rem; }
+.contact__email {
+  font-family: var(--mono);
+  font-size: 0.95rem;
+  color: var(--accent);
+  border-bottom: 1px solid transparent;
+  transition: border-color .18s ease;
+}
+.contact__email:hover { border-bottom-color: var(--accent); }
 .contact__links { display: flex; gap: 1.6rem; font-family: var(--mono); font-size: 0.88rem; }
 .contact__links a { color: var(--text-dim); border-bottom: 1px solid transparent; padding-bottom: 2px; transition: color .18s ease, border-color .18s ease; }
 .contact__links a:hover { color: var(--accent); border-bottom-color: var(--accent); }
