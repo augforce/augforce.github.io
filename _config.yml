@@ -7,9 +7,9 @@ baseurl: ""
 author: "Michael Augustine"
 
 # --- Contact (fill these in) ---
-email: ""              # e.g. you@example.com  -> renders an "Email me" button
+email: "maugustine78@gmail.com"
 github: "augforce"
-linkedin: ""           # full URL, e.g. https://www.linkedin.com/in/...
+linkedin: "https://www.linkedin.com/in/michael-augustine-8926a2164/"
 upwork: ""             # full URL to your Upwork profile
 
 # --- Build ---
