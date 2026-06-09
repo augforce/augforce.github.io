@@ -14,7 +14,7 @@
     (function () {
       try {
         var t = localStorage.getItem('theme');
-        if (!t) t = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        if (!t) t = 'dark';   /* default to dark for first-time visitors */
         document.documentElement.setAttribute('data-theme', t);
       } catch (e) {}
     })();
