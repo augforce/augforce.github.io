@@ -335,7 +335,7 @@ html[data-theme="dark"] .nav__theme .icon-sun { display: block; }
 /* ---------- verticals (who I build for) ---------- */
 .verticals {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  grid-template-columns: repeat(2, 1fr);  /* 2x2 — real estate sits under financial advisors */
   gap: 1.1rem;
 }
 .vertical {
@@ -387,11 +387,13 @@ html[data-theme="dark"] .nav__theme .icon-sun { display: block; }
 
 /* ---------- skills ---------- */
 .skills {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;   /* a short last row centers under the three above */
   gap: 1.6rem;
 }
 .skills__group {
+  flex: 0 1 calc(33.333% - 1.1rem);   /* three per row */
   border: 1px solid var(--border);
   border-radius: var(--radius);
   padding: 1.4rem 1.4rem 1.6rem;
@@ -482,6 +484,8 @@ html[data-theme="dark"] .nav__theme .icon-sun { display: block; }
   .nav.is-open .nav__toggle span:nth-child(2) { opacity: 0; }
   .nav.is-open .nav__toggle span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
   .cards { grid-template-columns: 1fr; }
+  .verticals { grid-template-columns: 1fr; }
+  .skills__group { flex-basis: 100%; }
 }
 
 /* hero: stack photo above the text only on small phones */
