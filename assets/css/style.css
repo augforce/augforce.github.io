@@ -248,8 +248,9 @@ html[data-theme="dark"] .nav__theme .icon-sun { display: block; }
 }
 .hero__lead {
   color: var(--text-dim);
-  font-size: clamp(1.05rem, 2vw, 1.22rem);
-  max-width: 60ch;
+  font-size: clamp(1rem, 1.5vw, 1.12rem);
+  line-height: 1.55;
+  max-width: none;        /* stretch to the headline's right edge, not a narrow column */
   margin: 0 0 2.2rem;
 }
 .hero__actions { display: flex; flex-wrap: wrap; gap: 1rem; margin-bottom: 2.6rem; }
