@@ -1,13 +1,17 @@
 <section class="section" id="work">
   <div class="container">
-    <p class="section__label" data-reveal>// 01 — Selected Work</p>
-    <h2 class="section__title" data-reveal>Things I've shipped</h2>
+    <p class="section__label" data-reveal>// 02 — Selected work</p>
+    <h2 class="section__title" data-reveal>Proof, then range</h2>
 
     <div class="cards">
       {% for p in site.data.projects %}
-      <article class="card" data-reveal>
+      <article class="card{% if p.flagship %} card--flagship{% endif %}" data-reveal>
         <div class="card__top">
+          {% if p.flagship %}
+          <span class="card__flag">★ Flagship</span>
+          {% else %}
           <span class="card__num">{{ forloop.index | prepend: '0' | slice: -2, 2 }}</span>
+          {% endif %}
           <ul class="card__tags">{% for t in p.tags %}<li>{{ t }}</li>{% endfor %}</ul>
         </div>
         <h3 class="card__title">{{ p.title }}</h3>

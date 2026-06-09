@@ -319,6 +319,59 @@ html[data-theme="dark"] .nav__theme .icon-sun { display: block; }
 }
 .card__link:hover { color: var(--accent-strong); gap: 0.7rem; }
 
+/* ---------- verticals (who I build for) ---------- */
+.verticals {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 1.1rem;
+}
+.vertical {
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--accent);
+  border-radius: var(--radius);
+  background: var(--surface);
+  box-shadow: var(--shadow);
+  padding: 1.4rem 1.5rem;
+  transition: transform .2s ease, box-shadow .2s ease, background-color .3s ease, border-color .3s ease;
+}
+.vertical:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); }
+.vertical__name { font-family: var(--display); font-size: 1.12rem; color: var(--text); margin-bottom: 0.5rem; }
+.vertical__blurb { color: var(--text-dim); font-size: 0.93rem; margin: 0; }
+.vertical__note {
+  display: inline-block;
+  margin-top: 0.9rem;
+  font-family: var(--mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.04em;
+  color: var(--accent);
+  background: var(--accent-soft);
+  border: 1px solid var(--accent-line);
+  border-radius: 6px;
+  padding: 0.2rem 0.55rem;
+}
+.verticals__foot { margin: 1.8rem 0 0; color: var(--text-dim); font-size: 0.95rem; }
+
+/* flagship project card */
+.card--flagship {
+  grid-column: 1 / -1;
+  border-color: var(--accent-line);
+  background: linear-gradient(180deg, var(--accent-soft), var(--surface));
+}
+.card--flagship::before { transform: scaleX(1); height: 3px; }
+.card--flagship .card__title { font-size: 1.5rem; }
+.card--flagship .card__blurb { max-width: 72ch; }
+.card__flag {
+  font-family: var(--mono);
+  font-size: 0.66rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #fff;
+  background: var(--accent);
+  border-radius: 6px;
+  padding: 0.22rem 0.6rem;
+  align-self: center;
+}
+
 /* ---------- skills ---------- */
 .skills {
   display: grid;
