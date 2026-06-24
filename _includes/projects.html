@@ -21,7 +21,7 @@
           View on GitHub <span aria-hidden="true">→</span>
         </a>
         {% else %}
-        <span class="card__link card__link--muted">{{ p.note | default: "Internal — no public repo" }}</span>
+        <span class="card__link card__link--muted">{{ p.note | default: "Internal, no public repo" }}</span>
         {% endif %}
       </article>
       {% endfor %}

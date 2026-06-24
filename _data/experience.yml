@@ -7,16 +7,16 @@
   points:
     - "Administer the Microsoft Foundry platform: developer-ready model deployments with token and quota controls, content filters, RBAC, API access, monitoring, cost controls, model evaluations, and incident troubleshooting."
     - "Govern model access and the operational configuration teams need to build safely on Foundry."
-    - "Guided Claude Code-assisted development of a local Google Workspace security auditor — CLI scans, FastAPI dashboard, SQLite findings, acknowledgments, and 20 security checks."
+    - "Guided Claude Code-assisted development of a local Google Workspace security auditor: CLI scans, FastAPI dashboard, SQLite findings, acknowledgments, and 20 security checks."
     - "Directed an approved, deployed MCP login-audit tool for admins: conversational Workspace audit reports, PDFs, login maps, and user lookup."
     - "Built and maintain an AI-assisted software-review agent for third-party app requests covering HIPAA, PII/PHI, privacy, CVEs, licensing, and vendor risk."
-    - "Provide technical enablement — staff guidance, knowledge base, security reviews, and operational procedures for AI tools and Workspace administration."
+    - "Provide technical enablement: staff guidance, knowledge base, security reviews, and operational procedures for AI tools and Workspace administration."
 
 - role: "AI Solutions Builder"
   org: "Independent AI Solutions Builder"
   dates: "Feb 2026 – Present"
   points:
-    - "Designed, tested, and deployed a production Cloudflare Pages AI tool for a client — a lead-generation and report workflow integrating GoHighLevel, GeoNames, AstrologyAPI, and Anthropic Claude with email report exports."
+    - "Designed, tested, and deployed a production Cloudflare Pages AI tool for a client, a lead-generation and report workflow integrating GoHighLevel, GeoNames, AstrologyAPI, and Anthropic Claude with email report exports."
     - "Built a secure serverless architecture where browser-facing pages call Cloudflare Functions while API keys and paid upstream services stay behind server-side proxy logic."
     - "Added practical abuse and cost controls: origin checks, per-IP rate limiting, server-side prompt construction, input validation, and client-specific voice/style rules."
     - "Configure and deploy localized AI workspaces and Claude Code project environments for task-specific automation, research, and tool-building."

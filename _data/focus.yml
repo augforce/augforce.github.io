@@ -1,10 +1,10 @@
 # "What I do" — focus areas, drawn from the résumé.
 
 - name: "AI Platform Operations"
-  blurb: "Administering Microsoft Foundry end to end — model deployments, token and quota controls, content filters, RBAC, API access, logging and monitoring, cost controls, private networking, and model evaluations — so developers can build safely."
+  blurb: "Administering Microsoft Foundry end to end (model deployments, token and quota controls, content filters, RBAC, API access, logging and monitoring, cost controls, private networking, and model evaluations) so developers can build safely."
 
 - name: "AI Tool Building & Enablement"
-  blurb: "Designing, testing, documenting, and shipping practical AI tools with Claude Code, the Anthropic API, MCP, and agentic workflows — plus the technical enablement that helps a team actually adopt them."
+  blurb: "Designing, testing, documenting, and shipping practical AI tools with Claude Code, the Anthropic API, MCP, and agentic workflows, plus the technical enablement that helps a team actually adopt them."
 
 - name: "Cloud, Data & Integrations"
-  blurb: "Google Workspace Super Admin, Google Cloud and BigQuery, Cloudflare Pages/Functions, FastAPI, OAuth, and secrets management — the plumbing that wires these tools into real systems."
+  blurb: "Google Workspace Super Admin, Google Cloud and BigQuery, Cloudflare Pages/Functions, FastAPI, OAuth, and secrets management, the plumbing that wires these tools into real systems."
