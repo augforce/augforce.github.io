@@ -1,16 +1,13 @@
-# Capability clusters for the Skills section.
+# Capability clusters for the Capabilities section — mirrors the résumé.
 
-- group: "Cloud & Infrastructure"
-  items: [GCP, Azure, Cloud Run, Cloudflare, BigQuery, Linux, "13+ yrs infra"]
+- group: "AI Platform Operations"
+  items: ["Microsoft Foundry", "Model Deployments", "Token & Quota Controls", "Content Filters", "RBAC", "API Access", "Logging & Monitoring", "Cost Controls", "Private Networking", "Model Evaluations"]
 
-- group: "AI & Automation"
-  items: ["Claude API", OpenAI, RAG, "AI Agents", n8n, "Vertex AI"]
+- group: "AI Tool Building & Enablement"
+  items: ["Claude Code", "Anthropic API", "MCP", "Agentic Workflow Design", "AI-Assisted Testing", "Technical Documentation"]
 
-- group: "Security & Compliance"
-  items: [HIPAA, "SOC 2", "Workspace Security", "Audit Logging"]
+- group: "Cloud, Data & Integrations"
+  items: ["Google Workspace Super Admin", "Google Cloud", "BigQuery", "Cloudflare Pages/Functions", "FastAPI", "SQLite", "OAuth", "Secrets Management"]
 
-- group: "Languages & Frameworks"
-  items: [Python, FastAPI, HTMX, SQL]
-
-- group: "Certifications"
-  items: ["Azure Certified", "GCP Certified"]
+- group: "Applied AI Workflows"
+  items: ["Internal Tools", "API Proxy Orchestration", "Report Generation", "Security Review Automation", "AI Workflow Automation"]

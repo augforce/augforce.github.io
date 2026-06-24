@@ -1,0 +1,16 @@
+<section class="section section--verticals" id="focus">
+  <div class="container">
+    <p class="section__label" data-reveal>// 02 — What I do</p>
+    <h2 class="section__title" data-reveal>Two sides of the same job: run the platform, build on it</h2>
+
+    <div class="verticals">
+      {% for f in site.data.focus %}
+      <article class="vertical" data-reveal>
+        <h3 class="vertical__name">{{ f.name }}</h3>
+        <p class="vertical__blurb">{{ f.blurb }}</p>
+        {% if f.note %}<span class="vertical__note">{{ f.note }}</span>{% endif %}
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>

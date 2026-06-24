@@ -331,11 +331,14 @@ html[data-theme="dark"] .nav__theme .icon-sun { display: block; }
   transition: gap .2s ease, color .2s ease;
 }
 .card__link:hover { color: var(--accent-strong); gap: 0.7rem; }
+/* internal projects with no public repo */
+.card__link--muted { color: var(--text-faint); cursor: default; }
+.card__link--muted:hover { gap: 0.4rem; }
 
-/* ---------- verticals (who I build for) ---------- */
+/* ---------- focus / "what I do" cards ---------- */
 .verticals {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);  /* 2x2 — real estate sits under financial advisors */
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 1.1rem;
 }
 .vertical {
@@ -419,6 +422,49 @@ html[data-theme="dark"] .nav__theme .icon-sun { display: block; }
 }
 .chips li:hover { color: var(--accent); border-color: var(--accent-line); background: var(--accent-soft); }
 
+/* ---------- experience timeline ---------- */
+.timeline { display: flex; flex-direction: column; gap: 1.1rem; }
+.job {
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--accent);
+  border-radius: var(--radius);
+  background: var(--surface);
+  box-shadow: var(--shadow);
+  padding: 1.5rem 1.6rem;
+  transition: transform .2s ease, box-shadow .2s ease, background-color .3s ease, border-color .3s ease;
+}
+.job:hover { transform: translateY(-3px); box-shadow: var(--shadow-lg); }
+.job__head {
+  display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between;
+  gap: 0.3rem 1rem;
+}
+.job__role { font-family: var(--display); font-size: 1.15rem; color: var(--text); }
+.job__meta { font-family: var(--mono); font-size: 0.82rem; color: var(--text-dim); }
+.job__dates {
+  display: inline-block; margin-top: 0.35rem;
+  font-family: var(--mono); font-size: 0.74rem; letter-spacing: 0.04em; color: var(--accent);
+}
+.job__points { margin: 1rem 0 0; padding-left: 1.15rem; list-style: disc; color: var(--text-dim); }
+.job__points li { font-size: 0.93rem; margin-bottom: 0.45rem; }
+.job__points li::marker { color: var(--accent-line); }
+
+/* ---------- education & certifications ---------- */
+.section--credentials { background: var(--bg-tint); border-block: 1px solid var(--border); transition: background-color .3s ease, border-color .3s ease; }
+.credentials { display: grid; grid-template-columns: 1fr 1fr; gap: 1.6rem; }
+.credentials__col {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+  box-shadow: var(--shadow);
+  padding: 1.4rem 1.5rem 1.6rem;
+  transition: background-color .3s ease, border-color .3s ease;
+}
+.credentials__heading { font-family: var(--display); font-size: 1rem; color: var(--text); margin-bottom: 1rem; }
+.edu { display: flex; flex-direction: column; gap: 1rem; }
+.edu__item { display: flex; flex-direction: column; gap: 0.2rem; }
+.edu__school { font-weight: 500; color: var(--text); }
+.edu__detail { font-family: var(--mono); font-size: 0.82rem; color: var(--text-dim); }
+
 /* ---------- contact ---------- */
 .section--contact { text-align: center; }
 .contact__inner { max-width: 680px; }
@@ -485,6 +531,7 @@ html[data-theme="dark"] .nav__theme .icon-sun { display: block; }
   .nav.is-open .nav__toggle span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
   .cards { grid-template-columns: 1fr; }
   .verticals { grid-template-columns: 1fr; }
+  .credentials { grid-template-columns: 1fr; }
   .skills__group { flex-basis: 100%; }
 }
 

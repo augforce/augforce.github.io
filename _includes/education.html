@@ -1,0 +1,26 @@
+<section class="section section--credentials" id="education">
+  <div class="container">
+    <p class="section__label" data-reveal>// 05 — Education &amp; certifications</p>
+    <h2 class="section__title" data-reveal>Background &amp; credentials</h2>
+
+    <div class="credentials">
+      <div class="credentials__col" data-reveal>
+        <h3 class="credentials__heading">Education</h3>
+        <ul class="edu">
+          {% for e in site.data.credentials.education %}
+          <li class="edu__item">
+            <span class="edu__school">{{ e.school }}</span>
+            <span class="edu__detail">{{ e.detail }}</span>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+      <div class="credentials__col" data-reveal>
+        <h3 class="credentials__heading">Certifications</h3>
+        <ul class="chips">
+          {% for c in site.data.credentials.certifications %}<li>{{ c }}</li>{% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>

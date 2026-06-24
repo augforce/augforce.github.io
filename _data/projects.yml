@@ -1,38 +1,44 @@
 # Project cards — single source of truth for the Work section.
-# Path to Purpose is the flagship and stays first. MLB stays last.
+# Path to Purpose is the flagship and stays first.
+# Cards without a `url` render as internal work (no public repo).
 
-- title: "Path to Purpose — Personalized Lead Magnet"
+- title: "Path to Purpose — Serverless AI Lead Tool"
   flagship: true
-  blurb: "A live, personalized-AI lead magnet built for a coaching brand: output written in the founder's own voice, API keys kept server-side, results exported straight to the client's own documents, deployed on their domain. This is the exact pattern I build for any expert — not a generic widget."
-  tags: [Cloudflare, Claude API, Lead Magnet]
+  blurb: "A live, serverless AI lead-and-report tool built for a client on Cloudflare Pages + Functions. Browser pages call server-side functions so API keys and paid upstream services stay protected — with origin checks, per-IP rate limiting, server-side prompt construction, and client-voice output rules. Integrates GoHighLevel, GeoNames, AstrologyAPI, and Anthropic Claude, with email report exports."
+  tags: [Cloudflare, Claude API, Serverless]
   url: "https://github.com/augforce/path-to-purpose-case-study"
 
-- title: "Workspace Login Audit"
-  blurb: "Generates audit-ready PDF reports of Google Workspace login activity straight from BigQuery logs — two-layer auth, idle-timeout sessions, and cost-capped queries."
-  tags: [FastAPI, Cloud Run, BigQuery]
-  url: "https://github.com/augforce/audit-webapp"
+- title: "Career Intelligence"
+  blurb: "A configurable, deterministic job-fit scorer with an optional LLM analysis layer, calibrated to a sample target role as a demo. Pairs explainable, rule-based scoring with Claude-generated narrative analysis."
+  tags: [Python, Job-Fit Scoring, LLM]
+  url: "https://github.com/augforce/career-intelligence"
 
 - title: "Workspace Security Auditor"
-  blurb: "A self-hosted security-posture auditor for Google Workspace — enterprise-tier insight without paying for the enterprise tier."
-  tags: [Python, Admin SDK, Security]
+  blurb: "A self-hosted Google Workspace security auditor: CLI scans, a FastAPI dashboard, SQLite-stored findings with acknowledgments, and 20 security checks — enterprise-tier posture insight without the enterprise tier."
+  tags: [Python, FastAPI, Security]
   url: "https://github.com/augforce/google-workspace-security-audit"
 
+- title: "Workspace Login Audit (MCP)"
+  blurb: "An approved, deployed MCP login-audit tool for Workspace admins — conversational audit reports, PDFs, login maps, and user lookup generated from BigQuery logs. Two-layer auth, idle-timeout sessions, and cost-capped parametrized queries."
+  tags: [MCP, FastAPI, BigQuery]
+  url: "https://github.com/augforce/audit-webapp"
+
+- title: "AI Compliance Agent"
+  blurb: "An AI-assisted software-review agent for third-party app requests, surfacing HIPAA, PII/PHI, privacy, CVE, licensing, and vendor-risk concerns for approval decisions. Built and maintained for internal use."
+  tags: [AI Agent, Compliance, Security]
+  note: "Internal — no public repo"
+
 - title: "Scout — IT Support Assistant"
-  blurb: "A retrieval-augmented assistant that answers IT questions over a company's Google Drive knowledge base, with cited sources."
-  tags: [RAG, FastAPI, HTMX, Claude]
+  blurb: "A retrieval-augmented IT-support assistant that answers questions over a company's Google Drive knowledge base, with cited sources."
+  tags: [RAG, FastAPI, Claude]
   url: "https://github.com/augforce/scout-it-assistant"
 
 - title: "RAG Readiness Grader"
-  blurb: "Scores documents for retrieval quality before they enter an index — catching the junk that quietly degrades RAG answers."
+  blurb: "Scores documents for retrieval quality before they enter an index — catching the low-quality content that quietly degrades RAG answers."
   tags: [Python, RAG, QA]
   url: "https://github.com/augforce/document-rag-readiness-grader"
 
 - title: "Model-Routing Chat"
-  blurb: "A LibreChat deployment configured to route staff to the right model for each task, taking the guesswork out of model selection."
+  blurb: "A LibreChat deployment organized so staff are routed to the best model for each task, taking the guesswork out of model selection."
   tags: [LibreChat, Multi-model]
   url: "https://github.com/augforce/custom-librechat-demo"
-
-- title: "MLB Pitch Predictor"
-  blurb: "An ML model predicting a pitcher's next pitch type, trained on 4,000+ pitches with real-world testing and drift analysis."
-  tags: [Vertex AI, ML, Python]
-  url: "https://github.com/augforce/mlb-pitch-predictor"
