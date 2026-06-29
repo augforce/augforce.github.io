@@ -8,6 +8,11 @@
   tags: [Cloudflare, Claude API, Serverless]
   url: "https://github.com/augforce/path-to-purpose-case-study"
 
+- title: "Hockey Card Analyst"
+  blurb: "A local MCP server that translates one analytics model's advanced hockey card into plain language: it maps each percentile to a tier, grades claims against the numbers, and compares players within a position pool. The deterministic reading rules live in config, not the model's memory, so the same card always produces the same analysis."
+  tags: [MCP, Hockey Analytics, Python]
+  url: "https://github.com/augforce/hockey-card-analyst"
+
 - title: "Career Intelligence"
   blurb: "A configurable, deterministic job-fit scorer with an optional LLM analysis layer, calibrated to a sample target role as a demo. Pairs explainable, rule-based scoring with Claude-generated narrative analysis."
   tags: [Python, Job-Fit Scoring, LLM]
