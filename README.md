@@ -1,6 +1,6 @@
 # augforce.github.io
 
-Personal portfolio for Michael Augustine — AI Conductor.
+Personal portfolio for Michael Augustine.
 Built with [Jekyll](https://jekyllrb.com/) and hosted on GitHub Pages.
 
 ## Editing content
