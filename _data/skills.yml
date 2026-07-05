@@ -4,10 +4,10 @@
   items: ["Microsoft Foundry", "Model Deployments", "Token & Quota Controls", "Content Filters", "RBAC", "API Access", "Logging & Monitoring", "Cost Controls", "Private Networking", "Model Evaluations"]
 
 - group: "AI Tool Building & Enablement"
-  items: ["Claude Code", "Anthropic API", "MCP", "Agentic Workflow Design", "AI-Assisted Testing", "Technical Documentation"]
+  items: ["Claude Code", "Claude Design", "Anthropic API", "MCP Server Development", "Agentic Workflow Design", "AI-Assisted Testing & Validation", "Knowledge Base Creation"]
 
 - group: "Cloud, Data & Integrations"
-  items: ["Google Workspace Super Admin", "Google Cloud", "BigQuery", "Cloudflare Pages/Functions", "FastAPI", "SQLite", "OAuth", "Secrets Management"]
+  items: ["Google Workspace Super Admin", "Google Cloud", "BigQuery", "Cloudflare Pages/Functions", "FastAPI", "SQLite", "OAuth", "APIs", "Secrets Management"]
 
 - group: "Applied AI Workflows"
   items: ["Internal Tools", "API Proxy Orchestration", "Report Generation", "Security Review Automation", "AI Workflow Automation"]
