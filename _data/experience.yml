@@ -5,9 +5,9 @@
   location: "Remote"
   dates: "Oct 2023 – Present"
   points:
-    - "Provide technical support and operations: staff training and guidance, ownership of the company technical knowledge base, operational procedures for AI tools, security testing through Vanta, and Google Workspace and Apple Business (MDM) administration."
-    - "Administer Microsoft Azure: developer-ready model deployments in AI Foundry with token and quota controls, content filters, RBAC, API access, monitoring, cost controls, model evaluations, and incident troubleshooting."
-    - "Govern model access and the operational configuration teams need to build safely."
+    - "Provide technical support and operations: staff training and guidance, ownership of the company technical knowledge base, and operational procedures for AI tools. Lead SOC2 compliance (Vanta) and security/HIPAA review of all new software and AI tool requests."
+    - "Administer Microsoft Azure: deploy and mirror AI models across regions for fault tolerance, manage the model retirement and versioning lifecycle, and configure token and quota controls, content filters, RBAC, API access, monitoring, and cost controls."
+    - "Led the company-wide Claude Code rollout: authored setup and cost-management guides, transitioned billing to a flat-rate Team plan, and onboarded engineering staff."
     - "Guided Claude Code-assisted development of a local Google Workspace security auditor: CLI scans, FastAPI dashboard, SQLite findings, acknowledgments, and 20+ security checks."
     - "Directed development of a deployed MCP login-audit tool for admins: Workspace audit reports, PDFs, login maps, and user lookup."
     - "Built and maintain an AI-assisted software-review agent for third-party app requests covering HIPAA, PII/PHI, privacy, and CVEs."

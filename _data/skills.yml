@@ -10,4 +10,4 @@
   items: ["Claude Code", "Claude Design", "Anthropic API Proxy Orchestration", "Python", "MCP Server Development", "Postman", "Agentic Workflows", "AI-Assisted Testing & Validation"]
 
 - group: "Cloud, Data & Integrations"
-  items: ["Google Workspace & GCP Super Admin", "Microsoft Azure Admin", "SQL", "BigQuery", "Cloudflare Pages/Functions", "FastAPI", "SQLite", "OAuth", "APIs", "Secrets Management"]
+  items: ["Google Workspace & GCP Super Admin", "Apple Business Admin", "Microsoft Azure Admin", "SQL", "BigQuery", "Cloudflare Pages/Functions", "FastAPI", "SQLite", "OAuth", "APIs", "Secrets Management"]
