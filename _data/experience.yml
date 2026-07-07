@@ -20,6 +20,7 @@
     - "Test and validate API behavior with Postman during development, alongside direct integrations with the Claude API, GeoNames, and other third-party services."
     - "Design server-side proxy architectures with OAuth, secrets management, cost-capped rate limiting, and input validation to protect API keys and paid services from misuse."
     - "Build YAML-configured, rule-based scoring engines with an optional Claude-powered analysis layer, keeping core logic testable offline while AI enhances output only when available."
+    - "Designed and directed the build of an MCP server security scanner: static analysis across permission scope, credential handling, injection risk, and provenance, producing a weighted, explained governance verdict, fully offline by default."
     - "Deployed a self-hosted LibreChat instance organized around model-specific strengths, removing guesswork from AI tool selection."
 
 - role: "Senior Technology Support Specialist"
