@@ -1,5 +1,6 @@
 # Project cards — single source of truth for the Work section.
 # Path to Purpose is the flagship and stays first.
+# After the flagship: governance & security builds, then AI tooling.
 # Cards without a `url` render as internal work (no public repo).
 
 - title: "Path to Purpose: Serverless AI Lead Tool"
@@ -8,15 +9,15 @@
   tags: [Cloudflare, Claude API, Serverless]
   url: "https://github.com/augforce/path-to-purpose-case-study"
 
-- title: "Hockey Card Analyst"
-  blurb: "A local MCP server that translates one analytics model's advanced hockey card into plain language: it maps each percentile to a tier, grades claims against the numbers, and compares players within a position pool. The deterministic reading rules live in config, not the model's memory, so the same card always produces the same analysis."
-  tags: [MCP, Hockey Analytics, Python]
-  url: "https://github.com/augforce/hockey-card-analyst"
+- title: "MCP Governance Scanner"
+  blurb: "A static-analysis review gate for MCP servers: hard security gates (hardcoded credentials, unvalidated input to shells, undisclosed network calls) plus a weighted, explained rubric that yields an Approved, Conditions, Review, or Fail verdict. Fully offline and deterministic by default, with optional Claude narrative and GitHub provenance layers that never override the result."
+  tags: [MCP, AI Governance, Static Analysis]
+  url: "https://github.com/augforce/mcp-governance-scanner"
 
-- title: "Career Intelligence"
-  blurb: "A configurable, deterministic job-fit scorer with an optional LLM analysis layer, calibrated to a sample target role as a demo. Pairs explainable, rule-based scoring with Claude-generated narrative analysis."
-  tags: [Python, Job-Fit Scoring, LLM]
-  url: "https://github.com/augforce/career-intelligence"
+- title: "AI Compliance Agent"
+  blurb: "An AI-assisted software-review agent for third-party app requests, surfacing HIPAA, PII/PHI, privacy, CVE, licensing, and vendor-risk concerns for approval decisions. Built and maintained for internal use."
+  tags: [AI Agent, Compliance, Security]
+  note: "Internal, no public repo"
 
 - title: "Workspace Security Auditor"
   blurb: "A self-hosted Google Workspace security auditor: CLI scans, a FastAPI dashboard, SQLite-stored findings with acknowledgments, and 20 security checks: enterprise-tier posture insight without the enterprise tier."
@@ -28,10 +29,15 @@
   tags: [MCP, FastAPI, BigQuery]
   url: "https://github.com/augforce/audit-webapp"
 
-- title: "AI Compliance Agent"
-  blurb: "An AI-assisted software-review agent for third-party app requests, surfacing HIPAA, PII/PHI, privacy, CVE, licensing, and vendor-risk concerns for approval decisions. Built and maintained for internal use."
-  tags: [AI Agent, Compliance, Security]
-  note: "Internal, no public repo"
+- title: "Hockey Card Analyst"
+  blurb: "A local MCP server that translates one analytics model's advanced hockey card into plain language: it maps each percentile to a tier, grades claims against the numbers, and compares players within a position pool. The deterministic reading rules live in config, not the model's memory, so the same card always produces the same analysis."
+  tags: [MCP, Hockey Analytics, Python]
+  url: "https://github.com/augforce/hockey-card-analyst"
+
+- title: "Career Intelligence"
+  blurb: "A configurable, deterministic job-fit scorer with an optional LLM analysis layer, calibrated to a sample target role as a demo. Pairs explainable, rule-based scoring with Claude-generated narrative analysis."
+  tags: [Python, Job-Fit Scoring, LLM]
+  url: "https://github.com/augforce/career-intelligence"
 
 - title: "Scout: IT Support Assistant"
   blurb: "A retrieval-augmented IT-support assistant that answers questions over a company's Google Drive knowledge base, with cited sources."
