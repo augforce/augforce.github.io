@@ -1,10 +1,13 @@
 # "What I do" — focus areas, drawn from the résumé.
 
+- name: "Technical Support"
+  blurb: "SaaS support and L2/L3 troubleshooting across macOS/iOS, Chrome OS, and Windows, plus device management, ticketing systems, Slack management, and systems administration."
+
 - name: "AI Platform Operations"
-  blurb: "Administering Microsoft Foundry end to end (model deployments, token and quota controls, content filters, RBAC, API access, logging and monitoring, cost controls, private networking, and model evaluations) so developers can build safely."
+  blurb: "Administering Microsoft Foundry end to end (model deployments, token and quota controls, content filters, RBAC, API access, logging and monitoring, cost controls, and model evaluations) so developers can build safely."
 
 - name: "AI Tool Building & Enablement"
-  blurb: "Designing, testing, documenting, and shipping practical AI tools with Claude Code, Claude Design, the Anthropic API, MCP server development, and agentic workflows, plus the technical enablement and knowledge base creation that help a team actually adopt them."
+  blurb: "Designing, testing, documenting, and shipping practical AI tools with Claude Code, Claude Design, Anthropic API proxy orchestration, Python, MCP server development, Postman, and agentic workflows, backed by AI-assisted testing and validation."
 
 - name: "Cloud, Data & Integrations"
-  blurb: "Google Workspace Super Admin, Google Cloud and BigQuery, Cloudflare Pages/Functions, FastAPI, SQLite, OAuth, and secrets management, the plumbing that wires these tools into real systems."
+  blurb: "Google Workspace and GCP Super Admin, Microsoft Azure admin, SQL and BigQuery, Cloudflare Pages/Functions, FastAPI, SQLite, OAuth, and secrets management, the plumbing that wires these tools into real systems."
