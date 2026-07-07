@@ -279,8 +279,11 @@ html[data-theme="dark"] .nav__theme .icon-sun { display: block; }
 /* ---------- project cards ---------- */
 .cards {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+  grid-template-columns: repeat(5, minmax(0, 1fr));   /* two even rows of five */
   gap: 1.1rem;
+}
+@media (max-width: 1100px) {
+  .cards { grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); }
 }
 .card {
   position: relative;
@@ -366,27 +369,6 @@ html[data-theme="dark"] .nav__theme .icon-sun { display: block; }
   padding: 0.2rem 0.55rem;
 }
 .verticals__foot { margin: 1.8rem 0 0; color: var(--text-dim); font-size: 0.95rem; }
-
-/* flagship project card */
-.card--flagship {
-  grid-column: 1 / -1;
-  border-color: var(--accent-line);
-  background: linear-gradient(180deg, var(--accent-soft), var(--surface));
-}
-.card--flagship::before { transform: scaleX(1); height: 3px; }
-.card--flagship .card__title { font-size: 1.5rem; }
-.card--flagship .card__blurb { max-width: 72ch; }
-.card__flag {
-  font-family: var(--mono);
-  font-size: 0.66rem;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: #fff;
-  background: var(--accent);
-  border-radius: 6px;
-  padding: 0.22rem 0.6rem;
-  align-self: center;
-}
 
 /* ---------- skills ---------- */
 .skills {

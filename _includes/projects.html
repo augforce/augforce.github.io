@@ -5,13 +5,9 @@
 
     <div class="cards">
       {% for p in site.data.projects %}
-      <article class="card{% if p.flagship %} card--flagship{% endif %}" data-reveal>
+      <article class="card" data-reveal>
         <div class="card__top">
-          {% if p.flagship %}
-          <span class="card__flag">★ Flagship</span>
-          {% else %}
           <span class="card__num">{{ forloop.index | prepend: '0' | slice: -2, 2 }}</span>
-          {% endif %}
           <ul class="card__tags">{% for t in p.tags %}<li>{{ t }}</li>{% endfor %}</ul>
         </div>
         <h3 class="card__title">{{ p.title }}</h3>

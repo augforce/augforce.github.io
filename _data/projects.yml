@@ -1,10 +1,8 @@
 # Project cards — single source of truth for the Work section.
-# Path to Purpose is the flagship and stays first.
-# After the flagship: governance & security builds, then AI tooling.
+# Path to Purpose stays first, then governance & security builds, then AI tooling.
 # Cards without a `url` render as internal work (no public repo).
 
 - title: "Path to Purpose: Serverless AI Lead Tool"
-  flagship: true
   blurb: "A live, serverless AI lead-and-report tool built for a client on Cloudflare Pages + Functions. Browser pages call server-side functions so API keys and paid upstream services stay protected, with origin checks, per-IP rate limiting, server-side prompt construction, and client-voice output rules. Integrates GoHighLevel, GeoNames, AstrologyAPI, and Anthropic Claude, with email report exports."
   tags: [Cloudflare, Claude API, Serverless]
   url: "https://github.com/augforce/path-to-purpose-case-study"
