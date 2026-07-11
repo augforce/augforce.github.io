@@ -1,13 +1,13 @@
 # "What I do" — focus areas, drawn from the résumé.
 
 - name: "Technical Support"
-  blurb: "SaaS support and L2/L3 troubleshooting across macOS/iOS, Chrome OS, and Windows, plus device management, ticketing systems, Slack management, and systems administration."
+  blurb: "SaaS administration and L2/L3 support across macOS, Chrome, and Windows, plus endpoint and device management (MDM), systems administration, Jira/Atlassian, and Slack."
 
 - name: "AI Platform Operations"
-  blurb: "Administering Microsoft Foundry end to end (model deployments, token and quota controls, content filters, RBAC, API access, logging and monitoring, cost controls, and model evaluations) so developers can build safely."
+  blurb: "Administering Microsoft Foundry end to end (model deployments, token and quota controls, content filters, API access, cost controls, and model evaluations) so developers can build safely."
 
 - name: "AI Tool Building & Enablement"
-  blurb: "Designing, testing, documenting, and shipping practical AI tools with Claude Code, Claude Design, Anthropic API proxy orchestration, Python, MCP server development, Postman, and agentic workflows, backed by AI-assisted testing and validation."
+  blurb: "Designing, testing, documenting, and shipping practical AI tools with Claude Code, Claude Design, Anthropic API proxy orchestration, LLMs, Python, MCP server development, prompt engineering, Postman, and agentic workflows, backed by AI-assisted testing and validation across the SDLC."
 
 - name: "Cloud, Data & Integrations"
-  blurb: "Google Workspace and GCP Super Admin, Apple Business admin, Microsoft Azure admin, SQL and BigQuery, Cloudflare Pages/Functions, FastAPI, SQLite, OAuth, and secrets management, the plumbing that wires these tools into real systems."
+  blurb: "Google Workspace and GCP Super Admin, Apple Business admin, Microsoft Azure admin, SQL and BigQuery, FastAPI, RBAC/IAM/OAuth, APIs, and secrets management, the plumbing that wires these tools into real systems."

@@ -5,7 +5,7 @@
   location: "Remote"
   dates: "Oct 2023 – Present"
   points:
-    - "Provide technical support and operations: staff training and guidance, ownership of the company technical knowledge base, and operational procedures for AI tools. Lead SOC2 compliance (Vanta) and security/HIPAA review of all new software and AI tool requests."
+    - "Provide technical support and operations: staff training and guidance, ownership of the company technical knowledge base, and operational procedures for AI tools. Lead SOC 2 compliance (Vanta) and security/HIPAA review of all new software and AI tool requests."
     - "Administer Microsoft Azure: deploy and mirror AI models across regions for fault tolerance, manage the model retirement and versioning lifecycle, and configure token and quota controls, content filters, RBAC, API access, monitoring, and cost controls."
     - "Led the company-wide Claude Code rollout: authored setup and cost-management guides, transitioned billing to a flat-rate Team plan, and onboarded engineering staff."
     - "Guided Claude Code-assisted development of a local Google Workspace security auditor: CLI scans, FastAPI dashboard, SQLite findings, acknowledgments, and 20+ security checks."
@@ -21,14 +21,13 @@
     - "Design server-side proxy architectures with OAuth, secrets management, cost-capped rate limiting, and input validation to protect API keys and paid services from misuse."
     - "Build YAML-configured, rule-based scoring engines with an optional Claude-powered analysis layer, keeping core logic testable offline while AI enhances output only when available."
     - "Designed and directed the build of an MCP server security scanner: static analysis across permission scope, credential handling, injection risk, and provenance, producing a weighted, explained governance verdict, fully offline by default."
-    - "Deployed a self-hosted LibreChat instance organized around model-specific strengths, removing guesswork from AI tool selection."
 
 - role: "Senior Technology Support Specialist"
   org: "Ferguson Florissant School District"
   location: "Florissant, MO"
   dates: "Jan 2011 – Oct 2023"
   points:
-    - "Managed the lifecycle, security, and OS updates for a fleet of 1,000+ Chromebooks, plus Windows and Mac support."
+    - "Managed the lifecycle, security, and OS updates for a fleet of 1,000+ Chromebooks (IT asset management), plus Windows desktop and server support and maintenance."
     - "Oversaw daily server operations and network stability across multiple campuses with rapid-response technical support in a high-volume ticketing environment."
     - "Advised administration on emerging education-technology needs and large-scale hardware deployment strategy."
-    - "Trained staff and students on new hardware and software, bridging the gap for non-technical users."
+    - "Trained and onboarded staff and students on new hardware and software rollouts, driving adoption and bridging the gap for non-technical users."
