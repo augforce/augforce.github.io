@@ -5,12 +5,11 @@
   location: "Remote"
   dates: "Oct 2023 – Present"
   points:
-    - "Provide technical support and operations: staff training and guidance, ownership of the company technical knowledge base, and operational procedures for AI tools. Lead SOC 2 compliance (Vanta) and security/HIPAA review of all new software and AI tool requests."
-    - "Administer Microsoft Azure: deploy and mirror AI models across regions for fault tolerance, manage the model retirement and versioning lifecycle, and configure token and quota controls, content filters, RBAC, API access, monitoring, and cost controls."
-    - "Led the company-wide Claude Code rollout: authored setup and cost-management guides, transitioned billing to a flat-rate Team plan, and onboarded engineering staff."
-    - "Guided Claude Code-assisted development of a local Google Workspace security auditor: CLI scans, FastAPI dashboard, SQLite findings, acknowledgments, and 20+ security checks."
-    - "Directed development of a deployed MCP login-audit tool for admins: Workspace audit reports, PDFs, login maps, and user lookup."
-    - "Built and maintain an AI-assisted software-review agent for third-party app requests covering HIPAA, PII/PHI, privacy, and CVEs."
+    - "Closed 1,000+ requests spanning support, documentation, and identity administration, including sole administration of Google Workspace."
+    - "Designed and run the company software vetting program: nearly 400 security, HIPAA, and CVE evaluations of apps, extensions, and AI tools, feeding the approved-software list and SOC 2 (Vanta) compliance."
+    - "Administer the Mac fleet via Apple Business Manager (procurement through offboarding) and validate every macOS release rollout."
+    - "Deploy and lifecycle-manage AI models in Microsoft Foundry: token and quota controls, content filters, RBAC, regional mirroring, and monitoring."
+    - "Led the company-wide Claude Code rollout and directed development of internal tools: a Google Workspace security auditor (20+ checks), a deployed MCP login-audit tool, and an AI compliance agent for third-party software review (HIPAA, PII/PHI, CVEs)."
 
 - role: "AI Solutions Builder"
   org: "Independent AI Solutions Builder"
@@ -27,7 +26,7 @@
   location: "Florissant, MO"
   dates: "Jan 2011 – Oct 2023"
   points:
-    - "Managed the lifecycle, security, and OS updates for a fleet of 1,000+ Chromebooks (IT asset management), plus Windows desktop and server support and maintenance."
+    - "Managed the lifecycle, security, and OS updates for a fleet of 10,000+ district-wide deployed Chromebooks (IT asset management), plus Windows desktop and server support and maintenance."
     - "Oversaw daily server operations and network stability across multiple campuses with rapid-response technical support in a high-volume ticketing environment."
     - "Advised administration on emerging education-technology needs and large-scale hardware deployment strategy."
     - "Trained and onboarded staff and students on new hardware and software rollouts, driving adoption and bridging the gap for non-technical users."

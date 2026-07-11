@@ -1,13 +1,13 @@
 # Capability clusters for the Capabilities section — mirrors the résumé.
 
 - group: "Technical Support"
-  items: ["SaaS Administration", "L2/L3 Support", "Systems Administration", "Endpoint & Device Management (MDM)", "macOS", "Chrome OS", "Windows Support", "Jira/Atlassian", "Slack"]
+  items: ["SaaS Administration", "L2/L3 Support", "Systems Administration", "Endpoint & Device Management (MDM)", "Apple Business Manager", "macOS", "Chrome OS", "Windows Support", "Jira/Atlassian", "Slack"]
 
 - group: "AI Platform Operations"
-  items: ["Microsoft Foundry", "Model Deployments", "Token & Quota Controls", "Content Filters", "API Access", "Cost Controls", "Model Evaluations"]
+  items: ["Microsoft Foundry", "Model Deployments & Lifecycle Management", "Token & Quota Controls", "Content Filters", "API Access", "Cost Controls", "Model Evaluations"]
 
 - group: "AI Tool Building & Enablement"
   items: ["Claude Code", "Claude Design", "Anthropic API Proxy Orchestration", "LLMs", "Python", "MCP Server Development", "Prompt Engineering", "Postman", "Agentic Workflows", "AI-Assisted Testing & Validation (SDLC)"]
 
 - group: "Cloud, Data & Integrations"
-  items: ["Google Workspace & GCP Super Admin", "Apple Business Admin", "Microsoft Azure Admin", "SQL", "BigQuery", "FastAPI", "RBAC/IAM/OAuth", "APIs", "Secrets Management"]
+  items: ["Google Workspace & GCP Super Admin", "Microsoft Azure Admin", "SQL", "BigQuery", "FastAPI", "RBAC/IAM/OAuth", "APIs", "Secrets Management"]
